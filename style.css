@@ -2,34 +2,87 @@ html {
     height: 100%;
     width: 100%;
     text-align: center;
-    font-family: bradley hand, cursive;
-    background-color: #fbfbfb;
-  }
-  h1 {
-    font-size: 30px;
-  } 
-  h3 {
-    font-size: 10px;
-  }
-  
-  #yea {
-    background-color: #99e199; 
-    height: 100px;
-    width: 150px;
-    font-family: bradley hand, cursive;
-    font-size: 50px;
-    color: #000000;
-  }
-  #nope:hover {
-    cursor: not-allowed;
-  }
-  #nope {
-    background-color: #e19898; 
-    height: 100px;
-    width: 150px;
-    font-family: bradley hand, cursive;
-    font-size: 50px;
-    color: #000000;
-  }
-  
+    font-family: "Lucid Serif VF", Georgia;
+    background-color: #1a1a1a;
+    color: #fbfbfb;
+}
 
+h1 {
+    font-size: 50;
+}
+
+p, ol, ul{
+    margin-top:0;
+}
+
+p {
+    line-height:180%;
+}
+
+ol,ul {
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    overflow: hidden;
+}
+
+#topboy {
+    float:left;
+    padding:none;
+    margin:none;
+    height:60px;
+    width:30%;
+}
+
+#top-header{
+    text-align: center;
+    height: 60px;
+}
+
+#menu {
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+
+#menu ul{
+    text-align: center;
+    float:right;
+    margin: none;
+    background: #ecadf7;
+}
+
+#menu li {
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+#menu li a{
+    color: #242424;
+}
+
+#menu li:hover a, #menu li span {
+    background: #d290de;
+    color: #000000;
+    border: 2px solid #000000;
+    text-decoration: none;
+    
+}
+
+.container{
+    margin: 0px auto;
+    width:1200px;
+}
