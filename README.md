@@ -1,2 +1,2 @@
-# testing_website
-https://weimic.github.io/testing_website/
+# My Personal Website
+https://weimic.github.io/home/
