@@ -24,6 +24,18 @@ ol,ul {
     list-style: none;
 }
 
+pink {
+    color: pink;
+}
+
+.listy li{
+    list-style-type: circle;
+    text-align: left;
+    margin-left: auto;
+    margin-right:auto;
+    width: 700px;
+}
+
 header {
     overflow: hidden;
 }
@@ -41,6 +53,26 @@ header {
     height: 60px;
 }
 
+a:link {
+    color: pink;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 176, 189);
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+    text-decoration: none;
+}
+
 #menu {
     float: right;
     width: 70%;
@@ -52,7 +84,7 @@ header {
     text-align: center;
     float:right;
     margin: none;
-    background: #ecadf7;
+    background: rgb(255, 192, 252);
 }
 
 #menu li {
@@ -75,9 +107,9 @@ header {
 }
 
 #menu li:hover a, #menu li span {
-    background: #d290de;
+    background: pink;
     color: #000000;
-    border: 2px solid #000000;
+    border: 0px solid red;
     text-decoration: none;
     
 }
