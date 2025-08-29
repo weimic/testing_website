@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
   if(noButton) {
     noButton.addEventListener("click", function() {
       if (clickCount == 20) {
-          window.location.href = "fail.html";
+          window.location.href = "valfail.html";
       } else if(clickCount > 20) {
         clickCount = 0;
       }
