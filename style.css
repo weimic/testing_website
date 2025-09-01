@@ -9,6 +9,12 @@ html {
 
 h1 {
     font-size: 50;
+    margin-bottom:0px;
+}
+
+sub {
+    font-size:larger;
+    color:rgb(214, 214, 214);
 }
 
 p, ol, ul{
@@ -87,7 +93,6 @@ a:active {
     text-align: center;
     float:right;
     margin: none;
-    background: rgb(255, 192, 252);
 }
 
 #menu li {
@@ -106,7 +111,7 @@ a:active {
 }
 
 #menu li a{
-    color: #242424;
+    color: white;
 }
 
 #menu li:hover a, #menu li span {
