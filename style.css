@@ -41,9 +41,12 @@ header {
 }
 
 #topboy {
+    display:flex;
+    align-items:left;
     float:left;
     padding:none;
     margin:none;
+    margin-top:-18px;
     height:60px;
     width:30%;
 }
@@ -99,7 +102,7 @@ a:active {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 60px;
+    line-height:40px;
 }
 
 #menu li a{
