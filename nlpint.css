@@ -1,0 +1,63 @@
+html {
+	height: 100%;
+	width: 40%;
+	position: absolute;
+	padding-left: 32%;
+	padding-top: 2.5%;
+	background-color: #1a1a1a;
+}
+
+.center {
+	text-align: center;
+}
+
+.indent {
+	margin-left: 20px;
+}
+
+hr.solid {
+  border-top: 2px solid #ffffff00;
+}
+title {
+	color: rgb(255, 255, 255);
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: rgb(255, 255, 255);
+}
+
+div {
+	background-color: #1a1a1a;
+}
+
+h3 {
+	color: rgb(255, 255, 255);
+}
+
+h1 {
+	color: rgb(255, 255, 255);
+}
+
+p {
+	color: rgb(255, 255, 255);
+}
+
+* {
+	background-color: rgb(23, 23, 23);
+}
+
+.name {
+	color: rgb(255, 255, 255);
+	font-weight: normal;
+}
+
+.link {
+	text-decoration: none;
+	color: white;
+}
+
+.link:hover {
+	color: aqua;
+	text-decoration: underline;	
+}

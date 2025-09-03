@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Natural Language Processing Midterm Implementation with Different Embeddings and Cosine Similarity</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="nlpint.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+
+<body>
+	
+	<link rel="stylesheet" href="nlpint.css">
+	<h1>Natural Language Processing Implementation with Different Embeddings and Cosine
+		Similarity for Paper Recommendations</h1>
+	<hr class="solid">
+	<h4 class='name'>Michael Wei, Ari Philip, Alexander Lin, Jason Chao</h4>
+	<h3>Our Research Question</h3>
+	<p><i>Can we determine the similarity between different documents using various Natural Language Processing
+			methods?</i>
+	</p>
+	<p>
+		For our summer midterm project, our team was tasked with the goal to develop a Natural Language Processing
+		model that could recommend similar documents based on an existing document. To determine a
+		viable method to calculate similarities between documents, there was a need for the conversion of text files
+		into
+		numbers that the computer could process. Then, we needed to compare those numbers and develop a degree of
+		similarity. Finally, we had to sort out the documents with the highest degree of similarity to chosen documents.
+	</p>
+	<h3>Preprocessing </h3>
+	<p>
+		Before our documents could be vectorized, they needed to be cleaned of multiple unwanted characters that could
+		have misled our model. In our preprocessing function, the following occurred:<br>
+	<div class='indent'>
+		- All text became lowercase.<br>
+		- Every punctuation mark was removed.<br>
+		- Any word with a non-word character in it was removed.<br>
+		- Every word less than 3 characters long was removed.<br>
+		- Every word with 'http' in it was removed.<br><br>
+	</div>
+	Each word that wasn't removed was appended to a string, and in the end, each document was formatted and
+	standardized.
+	</p>
+	<h3>Methods</h3>
+	We tried three different methods to identify the likeness between documents: Latent Dirichlet Allocation (LDA),
+	Bag-of-Words, and Doc2Vec. LDA is essentially a topic "finder", taking in each document and identifying topic words.
+	The
+	Bag-of-Words iterates through each document and determines the frequency of occurrence of each word in those
+	documents. Doc2Vec takes a document and creates vectors out of sets of words or phrases that are similar to each
+	other. Then, it creates a vector representation for said document, then compares it to those of other documents to
+	check for the degree of similarity. After running through all these methods, we used cosine similarity to calculate
+	similarities between documents, shown through
+	percentage values.
+	<h3>What Worked</h3>
+	<p>
+		Our most successful method was Bag-of-Words with cosine similarity. Our Doc2Vec model also ran without
+		any errors, but its results were quite different from those from Bag-of-Words and generally much less accurate.
+	</p>
+	<h3>What Didn't Work</h3>
+	<p>Our LDA model was unsuccessful. We were able to train the model, but couldn't find a way to implement it along with
+		cosine similarity. In addition, we attempted to use infer_vector, which was another sub-method in Doc2Vec. However,
+		it gave unrealistic similarities, so we decided not to continue with it.
+	</p>
+	<h3>Model Accuracies</h3>
+	<p>In order to evaluate the accuracies of our models, we reviewed both models' document similarities on our own and
+		made our own judgments. It was concluded that Bag-of-Words developed better similarities and was more consistent
+		with its accurate outcomes, making it more preferable than the Doc2Vec model.</p>
+	<h3>Reflections</h3>
+	<p>Thinking back on the timeframe we had to complete this project, we definitely tried our hand at a variety of
+		approaches. If given more time, we certainly would have made more of an effort to implement LDA, or Latent Dirichlet
+		Allocation, and perhaps other methods like K-Means Clustering. Additionally, N-grams were changed in the
+		Bag-of-Words but due to time constraints, we were unable to review their accuracies. With more time, we could have
+		further
+		evaluated the accuracies of the models we tried. </p>
+	</div>
+	<div class="center">
+		<h3>Our Resources</h3>
+		<hr class="solid">
+
+		<a href="https://www.nltk.org/" class="link">NLTK Library</a>
+		<br>
+		<a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html"
+			class="link">CountVectorizer Documentation</a>
+		<br>
+		<a href="https://www.geeksforgeeks.org/python-pandas-dataframe-loc/" class="link">Pandas Dataframe</a>
+		<br>
+		<a href="https://www.projectpro.io/recipes/train-word2vec-model-tensorflow" class="link">Word2Vec Model Training</a>
+		<br>
+		<a href="https://docs.python.org/3/library/re.html" class="link">Regex Documentation</a>
+		<br>
+		<h3>View Our Code!</h3>
+		<hr class="solid">
+		<script src="https://gist.github.com/weimic/6059bd2dd8b9539400d037abf342d41e.js"></script>
+	</div>
+
+
+
+
+</body>
+
+</html>

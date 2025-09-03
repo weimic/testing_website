@@ -2,6 +2,7 @@ html {
     height: 100%;
     width: 100%;
     text-align: center;
+    
     font-family: "Lucid Serif VF", Georgia;
     background-color: #1a1a1a;
     color: #fbfbfb;
@@ -10,6 +11,11 @@ html {
 h1 {
     font-size: 50;
     margin-bottom:0px;
+}
+
+h4 {
+    margin-top:0px;
+    font-size:18px;
 }
 
 sub {
@@ -52,7 +58,7 @@ header {
     float:left;
     padding:none;
     margin:none;
-    margin-top:-18px;
+    margin-top:-12px;
     height:60px;
     width:30%;
 }
@@ -107,7 +113,7 @@ a:active {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    line-height:40px;
+    line-height:60px;
 }
 
 #menu li a{
